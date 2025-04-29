@@ -88,7 +88,7 @@ export const FAQ = () => {
             <p className="text-xl md:text-2xl max-w-md mb-2">
               Got questions? Here are answers to the ones we get asked most often.
             </p>
-            <button className="bg-[#C7FB54] text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB78] transition-colors">
+            <button className="bg-[#004CD2] text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB78] transition-colors">
               Ask a Question
             </button>
           </div>
@@ -109,7 +109,7 @@ export const FAQ = () => {
                 onClick={() => toggleAccordion(index)}
               >
                 <div className="mx-4 flex items-center justify-center">
-                  <div className="bg-[#C7FB54] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-500">
+                  <div className="bg-[#004CD2] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-500">
                     <Plus 
                       size={24} 
                       weight="bold" 

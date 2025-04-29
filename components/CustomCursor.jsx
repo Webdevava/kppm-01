@@ -87,7 +87,7 @@ export default function CustomCursor() {
     <>
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 w-4 h-4 bg-[#C7FB54] rounded-full pointer-events-none mix-blend-difference z-50"
+        className="fixed top-0 left-0 w-4 h-4 bg-[#004CD2] rounded-full pointer-events-none mix-blend-difference z-50"
       />
       <div
         ref={followerRef}

@@ -93,13 +93,13 @@ export const Footer = () => {
     <section className="min-h-screen bg-[#F5F5F5] flex items-end justify-center flex-col gap-6 lg:p-12">
       <CTA/>
 
-      <div className="bg-[#C7FB54] rounded-2xl container mx-auto h-full">
+      <div className="bg-[#004CD2] rounded-2xl container mx-auto h-full">
         <div className="p-8 lg:p-12 flex flex-col gap-8">
           {/* Top Section with Logo and Tagline */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8">
             <div className="flex flex-col gap-2">
               <h2 className="text-2xl md:text-3xl text-black font-bold">KPPM<span className="text-foreground">ca</span></h2>
-              <p className="text-gray-700 text-sm md:text-base">Financial excellence through expert accounting</p>
+              <p className="text-white text-sm md:text-base">Financial excellence through expert accounting</p>
             </div>
             <button 
               ref={buttonRef}
@@ -115,11 +115,11 @@ export const Footer = () => {
             {/* Column 1 - Contact */}
             <div className="flex flex-col gap-4">
               <h3 className="text-lg font-semibold text-foreground">Get in Touch</h3>
-              <div className="flex items-center gap-3 text-gray-700">
+              <div className="flex items-center gap-3 text-white">
                 <Envelope size={18} />
                 <a href="mailto:info@kppmca.com" className="hover:text-foreground transition-colors">info@kppmca.com</a>
               </div>
-              <div className="flex items-center gap-3 text-gray-700">
+              <div className="flex items-center gap-3 text-white">
                 <Phone size={18} />
                 <a href="tel:+1234567890" className="hover:text-foreground transition-colors">+1 (234) 567-890</a>
               </div>
@@ -128,25 +128,25 @@ export const Footer = () => {
             {/* Column 2 - Links */}
             <div className="flex flex-col gap-4">
               <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">About Our Firm</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Accounting Services</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Tax Planning</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Careers at KPPMca</a>
+              <a href="#" className="text-white hover:text-black transition-colors">About Our Firm</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Accounting Services</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Tax Planning</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Careers at KPPMca</a>
             </div>
             
             {/* Column 3 - Services */}
             <div className="flex flex-col gap-4">
               <h3 className="text-lg font-semibold text-foreground">Services</h3>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Tax Preparation</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Financial Auditing</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Business Consulting</a>
-              <a href="#" className="text-gray-700 hover:text-black transition-colors">Wealth Management</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Tax Preparation</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Financial Auditing</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Business Consulting</a>
+              <a href="#" className="text-white hover:text-black transition-colors">Wealth Management</a>
             </div>
             
             {/* Column 4 - Newsletter */}
             <div ref={newsletterRef} className="flex flex-col gap-4">
               <h3 className="text-lg font-semibold text-foreground">Newsletter</h3>
-              <p className="text-gray-700 text-sm">Stay updated with our latest tax tips and financial insights</p>
+              <p className="text-white text-sm">Stay updated with our latest tax tips and financial insights</p>
               <div className="flex mt-2">
                 <input 
                   type="email" 
@@ -166,26 +166,26 @@ export const Footer = () => {
               <a 
                 href="#" 
                 ref={addToRefs}
-                className="text-gray-700 hover:text-foreground transition-colors bg-white p-2 rounded-full"
+                className="text-[#004CD2] hover:text-foreground transition-colors bg-white p-2 rounded-full"
               >
                 <InstagramLogo size={20} />
               </a>
               <a 
                 href="#" 
                 ref={addToRefs}
-                className="text-gray-700 hover:text-foreground transition-colors bg-white p-2 rounded-full"
+                className="text-[#004CD2] hover:text-foreground transition-colors bg-white p-2 rounded-full"
               >
                 <TwitterLogo size={20} />
               </a>
               <a 
                 href="#" 
                 ref={addToRefs}
-                className="text-gray-700 hover:text-foreground transition-colors bg-white p-2 rounded-full"
+                className="text-[#004CD2] hover:text-foreground transition-colors bg-white p-2 rounded-full"
               >
                 <LinkedinLogo size={20} />
               </a>
             </div>
-            <p className="text-gray-700 text-sm">© {new Date().getFullYear()} KPPMca. All rights reserved.</p>
+            <p className="text-[#004CD2] text-sm">© {new Date().getFullYear()} KPPMca. All rights reserved.</p>
           </div>
         </div>
       </div>

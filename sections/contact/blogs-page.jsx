@@ -169,11 +169,11 @@ export const BlogsPage = () => {
 
   return (
     <section className="flex lg:p-12 min-h-screen" ref={heroRef}>
-      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#C7FB54] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
+      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#004CD2] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
         <div className="p-12 space-y-4 flex flex-col items-center justify-center">
           {/* Trust badge */}
           <div className="bg-[#161616] rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit">
-            <ShieldCheck weight="fill" color="#C7FB54" />
+            <ShieldCheck weight="fill" color="#004CD2" />
             <p className="text-xs text-white uppercase font-semibold">
               Expert CA Services Since 1995
             </p>
@@ -233,7 +233,7 @@ export const BlogsPage = () => {
                 </p>
                 <a
                   href={post.link}
-                  className="inline-flex items-center text-[#C7FB54] font-semibold hover:text-[#A3E635] transition-colors"
+                  className="inline-flex items-center text-[#004CD2] font-semibold hover:text-[#A3E635] transition-colors"
                 >
                   Read Full Article
                   <ArrowRight size={20} className="ml-2" />

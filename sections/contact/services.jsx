@@ -89,11 +89,11 @@ export const Services = () => {
 
   return (
     <section className="flex lg:p-12" ref={heroRef}>
-      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#C7FB54] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
+      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#004CD2] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
         <div className="p-12 space-y-6 flex flex-col items-center justify-center">
           {/* Trust badge */}
           <div className="bg-[#161616] rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit">
-            <ShieldCheck weight="fill" color="#C7FB54" />
+            <ShieldCheck weight="fill" color="#004CD2" />
             <p className="text-xs text-white uppercase font-semibold">
               Expert CA Services Since 1995
             </p>
@@ -115,7 +115,7 @@ export const Services = () => {
               <Link
                 key={index}
                 href={service.href}
-                className="service-card bg-white backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:border-[#C7FB54] border border-white/20 transition-all duration-300"
+                className="service-card bg-white backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:border-[#004CD2] border border-white/20 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-[#161616] mb-2">
                   {service.label}

@@ -152,7 +152,7 @@ export const Blogs = () => {
             </p>
             <a
               href="/blogs"
-              className="inline-block bg-[#C7FB54] text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB78] transition-colors"
+              className="inline-block bg-[#004CD2] text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB78] transition-colors"
             >
               View All Blogs
             </a>
@@ -204,7 +204,7 @@ export const Blogs = () => {
                 </p>
                 <a
                   href={post.link}
-                  className="inline-flex items-center text-[#C7FB54] font-semibold hover:text-[#A3E635] transition-colors"
+                  className="inline-flex items-center text-[#004CD2] font-semibold hover:text-[#A3E635] transition-colors"
                 >
                   Read Full Article
                   <ArrowRight size={20} className="ml-2" />

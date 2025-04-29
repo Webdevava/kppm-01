@@ -123,7 +123,7 @@ export const Featured = () => {
           <h1 className="text-4xl md:text-6xl font-medium text-[#161616]">
             Featured Work
           </h1>
-          <button className="text-sm font-semibold bg-[#C7FB54] px-6 py-4 rounded-2xl hover:bg-[#A3E635] transition-colors">
+          <button className="text-sm font-semibold bg-[#004CD2] px-6 py-4 rounded-2xl hover:bg-[#A3E635] transition-colors">
             View More
           </button>
         </div>

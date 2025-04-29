@@ -57,11 +57,11 @@ export const ContactHero = () => {
 
   return (
     <section className="flex lg:p-12 min-h-screen" ref={heroRef}>
-      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#C7FB54] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
+      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#004CD2] via-background to-background rounded-2xl flex flex-col justify-center overflow-hidden relative">
         <div className="p-12 space-y-4 flex flex-col items-center justify-center">
           {/* Trust badge */}
           <div className="bg-[#161616] rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit">
-            <ShieldCheck weight="fill" color="#C7FB54" />
+            <ShieldCheck weight="fill" color="#004CD2" />
             <p className="text-xs text-white uppercase font-semibold">
               Expert CA Services Since 1995
             </p>
@@ -93,14 +93,14 @@ export const ContactHero = () => {
                   <label className="block text-white/80 mb-2 text-sm">First Name</label>
                   <input 
                     type="text" 
-                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                   />
                 </div>
                 <div>
                   <label className="block text-white/80 mb-2 text-sm">Last Name</label>
                   <input 
                     type="text" 
-                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                   />
                 </div>
               </div>
@@ -109,7 +109,7 @@ export const ContactHero = () => {
                 <label className="block text-white/80 mb-2 text-sm">Email Address</label>
                 <input 
                   type="email" 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                 />
               </div>
               
@@ -117,14 +117,14 @@ export const ContactHero = () => {
                 <label className="block text-white/80 mb-2 text-sm">Phone Number</label>
                 <input 
                   type="tel" 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                 />
               </div>
               
               <div>
                 <label className="block text-white/80 mb-2 text-sm">Services Needed</label>
                 <select 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54] appearance-none"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2] appearance-none"
                 >
                   <option className="bg-[#161616]" value="">Select a service</option>
                   <option className="bg-[#161616]" value="tax-planning">Tax Planning & Preparation</option>
@@ -138,13 +138,13 @@ export const ContactHero = () => {
               <div>
                 <label className="block text-white/80 mb-2 text-sm">Message (Optional)</label>
                 <textarea 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54] h-24 resize-none"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2] h-24 resize-none"
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="cta-button bg-[#C7FB54] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
+                className="cta-button bg-[#004CD2] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
               >
                 Schedule Consultation
               </button>

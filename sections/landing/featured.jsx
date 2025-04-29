@@ -144,7 +144,7 @@ export const Featured = () => {
           <h1 className="text-4xl md:text-6xl text-white font-medium">
             Featured Work
           </h1>
-          <button className="text-sm font-semibold bg-white px-6 py-4 rounded-2xl hover:bg-[#C7FB54] hover:text-[#161616] transition-colors">
+          <button className="text-sm font-semibold bg-white px-6 py-4 rounded-2xl hover:bg-[#004CD2] hover:text-[#161616] transition-colors">
             View More
           </button>
         </div>

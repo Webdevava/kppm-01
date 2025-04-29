@@ -191,7 +191,7 @@ export const AllArticles = () => {
                   onClick={() => setFilter(category)}
                   className={`px-4 py-2 rounded-full font-semibold text-sm transition-colors ${
                     filter === category
-                      ? "bg-[#C7FB54] text-[#161616]"
+                      ? "bg-[#004CD2] text-[#161616]"
                       : "bg-white text-gray-600 hover:bg-gray-100"
                   }`}
                 >
@@ -247,7 +247,7 @@ export const AllArticles = () => {
                 </p>
                 <a
                   href={post.link}
-                  className="inline-flex items-center text-[#C7FB54] font-semibold hover:text-[#A3E635] transition-colors"
+                  className="inline-flex items-center text-[#004CD2] font-semibold hover:text-[#A3E635] transition-colors"
                 >
                   Read Full Article
                   <ArrowRight size={20} className="ml-2" />

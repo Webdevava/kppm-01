@@ -163,7 +163,7 @@ export const Testimonials = () => {
     >
       <div className="container mx-auto max-w-7xl flex flex-col items-center">
         <div className="text-center flex items-center flex-col gap-3" ref={headerRef}>
-          <p className="text-sm font-semibold rounded-2xl px-5 py-2 w-fit bg-[#C7FB54]">
+          <p className="text-sm font-semibold rounded-2xl px-5 py-2 w-fit bg-[#004CD2]">
             You won’t believe this
           </p>
           <h2 className="text-5xl md:text-6xl font-medium mb-4 max-w-2xl">
@@ -194,7 +194,7 @@ export const Testimonials = () => {
                     <Star
                       key={i}
                       weight={i < testimonial.rating ? "fill" : "regular"}
-                      className="text-[#C7FB54]"
+                      className="text-[#004CD2]"
                       size={28}
                     />
                   ))}
@@ -237,7 +237,7 @@ export const Testimonials = () => {
             onTouchMove={handleDragMove}
           >
             <div className="flex flex-col items-center justify-center h-full text-center">
-              <span className="bg-[#C7FB54] rounded-2xl w-fit px-5 py-3 font-semibold text-xs text-foreground flex items-center mb-6">
+              <span className="bg-[#004CD2] rounded-2xl w-fit px-5 py-3 font-semibold text-xs text-foreground flex items-center mb-6">
                 BE OUR NEXT CLIENT IN THIS SECTION
               </span>
               <h3 className="text-3xl font-bold mb-6">Ready to Make an Impact?</h3>

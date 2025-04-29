@@ -12,19 +12,19 @@ export const CTA = () => {
   // Benefits list for CA firm
   const benefits = [
     {
-      icon: <CheckCircle size={24} weight="fill" className="text-[#C7FB54]" />,
+      icon: <CheckCircle size={24} weight="fill" className="text-[#004CD2]" />,
       text: "Personalized tax planning strategies"
     },
     {
-      icon: <CheckCircle size={24} weight="fill" className="text-[#C7FB54]" />,
+      icon: <CheckCircle size={24} weight="fill" className="text-[#004CD2]" />,
       text: "Expert financial compliance guidance"
     },
     {
-      icon: <CheckCircle size={24} weight="fill" className="text-[#C7FB54]" />,
+      icon: <CheckCircle size={24} weight="fill" className="text-[#004CD2]" />,
       text: "Comprehensive business accounting services"
     },
     {
-      icon: <CheckCircle size={24} weight="fill" className="text-[#C7FB54]" />,
+      icon: <CheckCircle size={24} weight="fill" className="text-[#004CD2]" />,
       text: "Dedicated support from certified professionals"
     }
   ];
@@ -102,7 +102,7 @@ export const CTA = () => {
       ctaButton.addEventListener('mouseleave', () => {
         gsap.to('.cta-button', {
           scale: 1,
-          backgroundColor: "#C7FB54",
+          backgroundColor: "#004CD2",
           duration: 0.3,
           ease: "power1.in"
         });
@@ -115,19 +115,19 @@ export const CTA = () => {
 
   return (
     <section 
-      className="min-h-[80vh] w-full bg-[#F5F5F5] flex items-center justify-cente lg:p-6"
+      className=" w-full bg-[#F5F5F5] flex items-center justify-cente lg:p-6"
       ref={sectionRef}
     >
       <div className="container mx-auto  bg-[#161616] shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-2xl p-12 relative overflow-hidden">
         {/* Floating icons for visual interest */}
         <div className="absolute top-12 left-16 floating-icon opacity-10">
-          <Calculator size={64} color="#C7FB54" />
+          <Calculator size={64} color="#004CD2" />
         </div>
         <div className="absolute bottom-20 right-24 floating-icon opacity-10">
-          <ChartPie size={80} color="#C7FB54" />
+          <ChartPie size={80} color="#004CD2" />
         </div>
         <div className="absolute top-1/3 right-1/4 floating-icon opacity-10">
-          <CheckCircle size={48} color="#C7FB54" />
+          <CheckCircle size={48} color="#004CD2" />
         </div>
 
         {/* CTA Content Grid */}
@@ -135,7 +135,7 @@ export const CTA = () => {
           {/* Left Content */}
           <div ref={contentRef} className="text-white space-y-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit">
-              <Calculator weight="fill" color="#C7FB54" />
+              <Calculator weight="fill" color="#004CD2" />
               <p className="text-xs text-white uppercase font-semibold">
                 FINANCIAL EXPERTISE
               </p>
@@ -163,7 +163,7 @@ export const CTA = () => {
 
           <button 
                 type="submit" 
-                className="cta-button bg-[#C7FB54] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
+                className="cta-button bg-[#004CD2] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
               >
                 Schedule Consultation
               </button>
@@ -183,14 +183,14 @@ export const CTA = () => {
                   <label className="block text-white/80 mb-2 text-sm">First Name</label>
                   <input 
                     type="text" 
-                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                   />
                 </div>
                 <div>
                   <label className="block text-white/80 mb-2 text-sm">Last Name</label>
                   <input 
                     type="text" 
-                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                    className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                   />
                 </div>
               </div>
@@ -199,7 +199,7 @@ export const CTA = () => {
                 <label className="block text-white/80 mb-2 text-sm">Email Address</label>
                 <input 
                   type="email" 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                 />
               </div>
               
@@ -207,14 +207,14 @@ export const CTA = () => {
                 <label className="block text-white/80 mb-2 text-sm">Phone Number</label>
                 <input 
                   type="tel" 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54]"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2]"
                 />
               </div>
               
               <div>
                 <label className="block text-white/80 mb-2 text-sm">Services Needed</label>
                 <select 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54] appearance-none"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2] appearance-none"
                 >
                   <option className="bg-[#161616]" value="">Select a service</option>
                   <option className="bg-[#161616]" value="tax-planning">Tax Planning & Preparation</option>
@@ -228,13 +228,13 @@ export const CTA = () => {
               <div>
                 <label className="block text-white/80 mb-2 text-sm">Message (Optional)</label>
                 <textarea 
-                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#C7FB54] h-24 resize-none"
+                  className="w-full p-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#004CD2] h-24 resize-none"
                 ></textarea>
               </div>
               
               <button 
                 type="submit" 
-                className="cta-button bg-[#C7FB54] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
+                className="cta-button bg-[#004CD2] text-[#161616] w-full py-4 rounded-xl font-bold text-lg hover:bg-[#C7FB78] transition-all duration-300"
               >
                 Schedule Consultation
               </button>

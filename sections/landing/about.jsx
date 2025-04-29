@@ -165,7 +165,7 @@ export const About = () => {
         >
           <div>
             <div className="bg-[#161616] rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit mb-6">
-              <Star weight="fill" color="#C7FB54" />
+              <Star weight="fill" color="#004CD2" />
               <p className="text-xs text-white uppercase font-semibold">
                 WHO WE ARE
               </p>
@@ -180,7 +180,7 @@ export const About = () => {
             </p>
             <a
               href="/services"
-              className="inline-block bg-[#C7FB54]  text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB75] transition-colors"
+              className="inline-block bg-[#004CD2]  text-sm rounded-2xl px-8 py-3 font-bold hover:bg-[#C7FB75] transition-colors"
             >
               Our Services
             </a>
@@ -205,7 +205,7 @@ export const About = () => {
             </p>
             <a
               href="/story"
-              className="inline-flex items-center text-lg font-semibold hover:text-[#C7FB54] transition-colors pt-4"
+              className="inline-flex items-center text-lg font-semibold hover:text-[#004CD2] transition-colors pt-4"
             >
               Read Our Full Story
               <ArrowRight size={24} className="ml-2" />
@@ -247,7 +247,7 @@ export const About = () => {
                 {/* Overlay */}
                 <div className="overlay absolute inset-0 bg-gradient-to-t from-[#161616]/90 via-[#161616]/50 to-transparent p-6 flex flex-col justify-end opacity-0 transform translate-y-20">
                   <h4 className="text-2xl font-medium text-white">{member.name}</h4>
-                  <p className="text-[#C7FB54] font-medium mb-2">{member.role}</p>
+                  <p className="text-[#004CD2] font-medium mb-2">{member.role}</p>
                   <p className="text-white/80">{member.description}</p>
                 </div>
               </div>

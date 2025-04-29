@@ -1,18 +1,42 @@
-import { Calculator, ChartPie, ShieldCheck } from "@phosphor-icons/react/dist/ssr";
+import { Calculator, ChartPie, ShieldCheck, Dot } from "@phosphor-icons/react/dist/ssr";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 export const Hero = () => {
-  // Client logos - replace with actual client logos
+  // Client logos
   const logos = [
-    "Fortune 500", 
-    "Tax Council",
-    "Finance Plus",
-    "Enterprise Ltd",
-    "Growth Corp",
-    "Secure Trust",
-    "Audit Pro",
-    "Global Finance"
+    "Veritas Software Technologies India",
+    "Infrabeat Technologies",
+    "Ennovata Sales & Services",
+    "Ognibene India",
+    "KSPG Automotive India",
+    "Accord Engineering Works",
+    "Ferrero India",
+    "Savvy Pure Aqua",
+    "Weikifield India",
+    "Abhijeet Engineers",
+    "Pune Carbons",
+    "Techexpert Engineering",
+    "Cordstrap India",
+    "Anacle India",
+    "Bank of Maharashtra",
+    "Bny Mellon International Operations",
+    "Kallapana Avade Ichalkaranji Janata Coop Bank",
+    "Aflah Textile",
+    "Irfana Fabrics",
+    "Shabnam Fabrics",
+    "Sahyadri Farmes Producers Company",
+    "Sahyadri Agro Retails Limited",
+    "Anacle India",
+    "Anacle PTE",
+    "Zumata India",
+    "Global Talent Track",
+    "Pune City Center",
+    "Cordstrap USA",
+    "Zumata PTE",
+    "DSI INC - USA",
+    "Kingdom Turf Inc",
+    "Scarecrow M & C Saatchi"
   ];
 
   // Refs for elements to animate
@@ -36,6 +60,14 @@ export const Hero = () => {
         repeat: -1,
         yoyo: true,
         stagger: 0.2
+      });
+
+      // Rotating star animation
+      gsap.to('.rotating-star', {
+        rotation: 360,
+        duration: 4,
+        ease: "linear",
+        repeat: -1,
       });
 
       // Initial text animations
@@ -85,7 +117,7 @@ export const Hero = () => {
 
       gsap.to(marquee, {
         x: -marqueeWidth,
-        duration: 25, // Slower for a more professional feel
+        duration: 25,
         ease: "linear",
         repeat: -1,
         modifiers: {
@@ -99,18 +131,18 @@ export const Hero = () => {
 
   return (
     <section className="flex lg:p-12 min-h-screen bg-gradient-to-b from-white via-background to-background" ref={heroRef}>
-      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#C7FB54] via-background to-background rounded-2xl flex flex-col justify-between overflow-hidden relative">
+      <div className="mt-32 container mx-auto bg-gradient-to-b from-[#004CD2] via-background to-background rounded-2xl flex flex-col justify-between overflow-hidden relative">
         {/* Decorative background icons */}
-        {/* <div ref={iconsRef} className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div ref={iconsRef} className="absolute inset-0 overflow-hidden pointer-events-none">
           <Calculator size={64} className="text-[#161616]/10 absolute top-20 left-36 floating-icon" />
           <ChartPie size={80} className="text-[#161616]/10 absolute bottom-48 right-24 floating-icon" />
           <ShieldCheck size={72} className="text-[#161616]/10 absolute top-48 right-96 floating-icon" />
           <Calculator size={56} className="text-[#161616]/10 absolute bottom-32 left-48 floating-icon" />
-        </div> */}
+        </div>
 
         <div className="p-12 space-y-4 flex flex-col items-center justify-center">
           <div className="bg-[#161616] rounded-2xl px-5 py-3 flex items-center justify-center gap-3 w-fit">
-            <ShieldCheck weight="fill" color="#C7FB54" />
+            <ShieldCheck weight="fill" color="#004CD2" />
             <p className="text-xs text-white uppercase font-semibold">
               Trusted financial advisory since 1995
             </p>
@@ -155,26 +187,38 @@ export const Hero = () => {
           <div className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-background/85 to-transparent z-10"></div>
 
           <div className="logo-marquee flex whitespace-nowrap" ref={marqueeRef}>
-            {/* First set of logos */}
+            {/* First set of logos with rotating stars */}
             {logos.map((logo, index) => (
-              <div
-                key={`logo-${index}`}
-                className="mx-10 flex items-center justify-center"
-              >
-                <div className="h-12 w-36 flex items-center justify-center rounded bg-white/10 backdrop-blur-sm px-4 py-2">
-                  <span className="font-medium text-[#161616]">{logo}</span>
+              <div key={`logo-${index}`} className="flex items-center">
+                <div className="mx-6 flex items-center justify-center">
+                  <div className="h-12 flex items-center justify-center rounded bg-white/10 backdrop-blur-sm px-4 py-2">
+                    <h1 className="font-bold text-3xl text-[#3e3e3e]">{logo}</h1>
+                  </div>
                 </div>
+                {index < logos.length - 1 && (
+                  <Dot
+                    size={24}
+                    weight="fill"
+                    className="rotating-star text-[#004CD2] mx-4"
+                  />
+                )}
               </div>
             ))}
             {/* Duplicate logos for seamless loop */}
             {logos.map((logo, index) => (
-              <div
-                key={`logo-duplicate-${index}`}
-                className="mx-10 flex items-center justify-center"
-              >
-                <div className="h-12 w-36 flex items-center justify-center rounded bg-white/10 backdrop-blur-sm px-4 py-2">
-                  <span className="font-medium text-[#161616]">{logo}</span>
+              <div key={`logo-duplicate-${index}`} className="flex items-center">
+                <div className="mx-6 flex items-center justify-center">
+                  <div className="h-12 flex items-center justify-center rounded bg-white/10 backdrop-blur-sm px-4 py-2">
+                    <span className="font-medium text-[#161616]">{logo}</span>
+                  </div>
                 </div>
+                {index < logos.length - 1 && (
+                  <Dot
+                    size={24}
+                    weight="fill"
+                    className="rotating-star text-[#004CD2] mx-4"
+                  />
+                )}
               </div>
             ))}
           </div>

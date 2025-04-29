@@ -185,7 +185,7 @@ export const Navbar = () => {
           rotateX: 0,
           rotateY: 0,
           scale: 1,
-          backgroundColor: '#C7FB54',
+          backgroundColor: '#004CD2',
           boxShadow: 'none',
           duration: 0.2,
           ease: 'power3.out',
@@ -258,7 +258,7 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold">
-              KPPM<span className="text-[#C7FB54]">ca</span>
+              KPPM<span className="text-[#004CD2]">ca</span>
             </Link>
           </div>
 
@@ -285,7 +285,7 @@ export const Navbar = () => {
                       weight="bold" 
                       className={`transform transition-transform ${activeDropdown === 'services' ? 'rotate-180' : ''}`} 
                     /> */}
-                    <span className="underline absolute bottom-0 left-0 h-[2px] bg-[#C7FB54] w-0"></span>
+                    <span className="underline absolute bottom-0 left-0 h-[2px] bg-[#004CD2] w-0"></span>
                   </div>
                 ) : (
                   <Link 
@@ -294,7 +294,7 @@ export const Navbar = () => {
                     className="font-medium relative text-sm"
                   >
                     {link.label}
-                    <span className="underline absolute bottom-0 left-0 h-[2px] bg-[#C7FB54] w-0"></span>
+                    <span className="underline absolute bottom-0 left-0 h-[2px] bg-[#004CD2] w-0"></span>
                   </Link>
                 )}
 
@@ -328,7 +328,7 @@ export const Navbar = () => {
             ))}
             <button
               ref={buttonRef}
-              className="bg-[#C7FB54] text-[#161616] font-semibold px-6 py-3 rounded-2xl transform perspective-800"
+              className="bg-[#004CD2] text-[#161616] font-semibold px-6 py-3 rounded-2xl transform perspective-800"
             >
               Get Started
             </button>
@@ -354,7 +354,7 @@ export const Navbar = () => {
           <div className="flex justify-end">
             <button
               onClick={toggleMenu}
-              className="focus:outline-none bg-[#C7FB54] p-3 rounded-full z-[100] mb-6"
+              className="focus:outline-none bg-[#004CD2] p-3 rounded-full z-[100] mb-6"
             >
               <X size={24} color="#161616" />
             </button>
@@ -407,7 +407,7 @@ export const Navbar = () => {
               </div>
             ))}
             <button
-              className="bg-[#C7FB54] text-[#161616] font-semibold px-6 py-3 rounded-2xl w-fit mt-4"
+              className="bg-[#004CD2] text-[#161616] font-semibold px-6 py-3 rounded-2xl w-fit mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Get Started

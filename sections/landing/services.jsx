@@ -5,7 +5,10 @@ import {
   ChartPie, 
   Briefcase, 
   ChartBar, 
-  FileText 
+  FileText,
+  Scales,
+  Building,
+  Gear
 } from "@phosphor-icons/react/dist/ssr";
 
 export const Services = () => {
@@ -14,52 +17,79 @@ export const Services = () => {
   const headerRef = useRef(null);
   const cardsRef = useRef([]);
 
-  // Services data with different colors for bento grid
+  // Services data with pastel, poppy, smooth colors for bento grid
   const services = [
     {
-      title: "Tax Planning & Compliance",
-      description: "Strategic tax planning and preparation services to minimize liabilities and ensure full compliance with regulations.",
-      icon: <Calculator size={36} weight="fill" />,
-      color: "#C7FB54", // Lime green
-      bgColor: "#161616", // Dark background
+      title: "Audit & Assurance Services",
+      description: "Thorough audit and assurance services to ensure financial accuracy, compliance, and stakeholder confidence.",
+      icon: <FileText size={36} weight="fill" />,
+      color: "#2E2E2E", // Dark gray for contrast
+      bgColor: "#A7C7E7", // Soft pastel blue
       shape: "/assets/shape-1.png",
       className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
     },
     {
-      title: "Business Advisory",
-      description: "Expert guidance for business growth, financial strategy, and operational efficiency to help you navigate complex financial landscapes and achieve sustainable growth.",
-      icon: <Briefcase size={36} weight="fill" />,
-      color: "#fefefe", // Blue
-      bgColor: "#056646",
+      title: "Direct Tax Consultancy",
+      description: "Expert advice on direct tax planning and compliance to optimize tax liabilities and ensure regulatory adherence.",
+      icon: <Calculator size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#F4C7C3", // Warm pastel peach
       shape: "/assets/shape-2.png",
       className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
     },
     {
-      title: "Audit & Assurance",
-      description: "Comprehensive audit services to verify financial accuracy and build stakeholder confidence in your financial reporting.",
-      icon: <FileText size={36} weight="fill" />,
-      color: "#333", // Pink
-      bgColor: "#C6FB50",
-      shape: "/assets/shape-4.png",
-      className: "col-span-12 lg:col-span-4 row-span-2",
+      title: "Indirect Tax Consultancy",
+      description: "Specialized guidance on indirect tax strategies, including GST and VAT, to streamline compliance and reduce costs.",
+      icon: <Scales size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#B5EAD7", // Mint green
+      shape: "/assets/shape-3.png",
+      className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
     },
     {
-      title: "Financial Reporting",
-      description: "Accurate and timely financial statements and reports prepared according to the latest accounting standards.",
+      title: "Accounting Solutions",
+      description: "Comprehensive accounting services for accurate financial reporting and streamlined bookkeeping processes.",
       icon: <ChartBar size={36} weight="fill" />,
-      color: "#FBBF24", // Amber
-      bgColor: "#92400E",
-      shape: "/assets/3d-4.png",
+      color: "#2E2E2E",
+      bgColor: "#FFDAC1", // Soft coral
+      shape: "/assets/shape-4.png",
       className: "col-span-12 sm:col-span-6 lg:col-span-6 row-span-1",
     },
     {
-      title: "Wealth Management",
-      description: "Personalized strategies to grow and protect your assets while optimizing for long-term financial security and prosperity.",
-      icon: <ChartPie size={36} weight="fill" />,
-      color: "#A78BFA", // Purple
-      bgColor: "#5B21B6",
+      title: "Consulting",
+      description: "Strategic consulting to drive business growth, improve efficiency, and navigate complex financial landscapes.",
+      icon: <Briefcase size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#C1A7E7", // Light lavender
       shape: "/assets/3d-1.png",
       className: "col-span-12 sm:col-span-6 lg:col-span-6 row-span-1",
+    },
+    {
+      title: "Due Diligence Review",
+      description: "In-depth due diligence to assess financial risks and opportunities for mergers, acquisitions, or investments.",
+      icon: <ChartPie size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#FFE4E1", // Pale rose
+      shape: "/assets/3d-2.png",
+      className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
+    },
+    {
+      title: "Valuation",
+      description: "Accurate business and asset valuations to support strategic decisions, mergers, or financial reporting.",
+      icon: <Building size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#D4F1F4", // Light aqua
+      shape: "/assets/3d-3.png",
+      className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
+    },
+    {
+      title: "Business Process Outsourcing",
+      description: "Efficient outsourcing solutions for finance, accounting, and administrative tasks to enhance operational scalability.",
+      icon: <Gear size={36} weight="fill" />,
+      color: "#2E2E2E",
+      bgColor: "#FFF5BA", // Soft yellow
+      shape: "/assets/3d-4.png",
+      className: "col-span-12 sm:col-span-6 lg:col-span-4 row-span-2",
     },
   ];
 
@@ -137,8 +167,7 @@ export const Services = () => {
         <div className="mb-12 sm:mb-16" ref={headerRef}>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium mb-4">Our Services</h2>
           <p className="text-lg sm:text-xl md:text-2xl max-w-2xl">
-            Comprehensive financial solutions tailored to your business needs. Our expert team 
-            delivers precision, compliance, and strategic insights.
+            Tailored financial and business solutions to empower your success with precision and expertise.
           </p>
         </div>
 
@@ -155,7 +184,7 @@ export const Services = () => {
               <img 
                 src={service.shape} 
                 alt="" 
-                className="3d-element absolute right-0 bottom-0 w-2/5 opacity-20 z-0 pointer-events-none"
+                className="shape-element absolute right-0 bottom-0 w-2/5 opacity-20 z-0 pointer-events-none"
               />
 
               {/* Content */}
@@ -176,7 +205,7 @@ export const Services = () => {
                   {service.title}
                 </h3>
                 
-                <p className="text-white/80 text-shadow-gray-200 text-shadow-2xs text-sm sm:text-base flex-grow">
+                <p className="text-gray-800 text-shadow-gray-200 text-shadow-2xs text-sm sm:text-base flex-grow">
                   {service.description}
                 </p>
                 
